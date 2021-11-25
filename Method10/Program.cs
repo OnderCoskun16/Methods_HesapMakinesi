@@ -18,9 +18,9 @@ namespace Method10
 
             Console.WriteLine($"{TekrarN + 1}. Sayıyı Giriniz");
 
-            sayi1 = (float)Convert.ToDouble(Console.ReadLine());
+            float islemSonucu = (float)Convert.ToDouble(Console.ReadLine());
             TekrarN++;
-            float islemSonucu = Islem(islem, ref sayi1, sayi2);
+            islemSonucu = Islem(islem, islemSonucu, sayi2);
 
             do
             {
@@ -30,7 +30,7 @@ namespace Method10
                 Console.WriteLine($"{TekrarN + 1}.Sayıyı Giriniz");
                 sayi2 = (float)Convert.ToDouble(Console.ReadLine());
                 TekrarN++;
-                islemSonucu = Islem(islem, ref sayi1, sayi2);
+                islemSonucu = Islem(islem, islemSonucu, sayi2);
 
             } while (n > TekrarN);
 
@@ -43,7 +43,7 @@ namespace Method10
         // todo : bu işlemi n adet sayı için yapan metodu yazınız.. Perşembe gününe kadar gönderiniz...
 
         // todo:  ascii table nedir. Neden 255 karakter vardır.. araştırınız...Ve Bu programdaki gibi txt dosyasına açıklamasını yazınız...
-        private static float Islem(char islem, ref float sayi1, float sayi2)
+        private static float Islem(char islem, float sayi1, float sayi2)
         {
             switch (islem)
             {
