@@ -1,0 +1,5 @@
+﻿Ascii  Tablosunun amacı;
+
+Klavyeden girilen tuşlara bir kod vermektir. bilgisayar dilinin anlaması için bir kodlama yapılmıştır.
+İlk 20 karakter özel işlemler için ayrılmıştır.
+Örneğin CR ve LF gibi
